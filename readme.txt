@@ -26,3 +26,5 @@ str = "this is string example....wow!!!";
 print str.translate(trantab);
 This will produce following result:
 th3s 3s str3ng 2x1mpl2....w4w!!!
+
+http://www.tutorialspoint.com/python/string_maketrans.htm

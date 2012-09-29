@@ -3,7 +3,7 @@
         <meta charset="utf-8">
         <title>Translator</title>
         <style type="text/css">
-            body {width:600px;margin:100px auto;}
+            body {width:400px;margin:100px auto;}
         </style>
     </head>
     <body>
@@ -11,7 +11,7 @@
 
         <!-- Add your site or application content here -->
         <h2>Original</h2>
-        <textarea name="org" class="org" id="" cols="90" rows="10"></textarea>
+        <textarea name="org" class="org" id="" cols="40" rows="10"></textarea>
         
         <h2>Translation</h2>
         <div class="tran"></div>
@@ -19,87 +19,10 @@
         <br>
         <button onclick="hopToIt()">Go</button>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+        <script src="characterMapping.jquery.js"></script>
 
 
-        <script type="text/javascript">
-            var tran = '';
-            var tranContainer = $('.tran');
-            var org = $('.org').val();
-            function translater(str) {
-                for (i=0; i<str.length; i++) {
-                    var j = i - 1;
-                    if (j < 0) {
-                        j = 0;
-                    }
-                    var mychar = str.substr(i,1);
-                    if (mychar === 'a') {
-                        mychar = 'c';
-                    } else if (mychar === 'b') {
-                        mychar = 'd';
-                    } else if (mychar === 'c') {
-                        mychar = 'e';
-                    } else if (mychar === 'd') {
-                        mychar = 'f';
-                    } else if (mychar === 'e') {
-                        mychar = 'g';
-                    } else if (mychar === 'f') {
-                        mychar = 'h';
-                    } else if (mychar === 'g') {
-                        mychar = 'i';
-                    } else if (mychar === 'h') {
-                        mychar = 'j';
-                    } else if (mychar === 'i') {
-                        mychar = 'k';
-                    } else if (mychar === 'j') {
-                        mychar = 'l';
-                    } else if (mychar === 'k') {
-                        mychar = 'm';
-                    } else if (mychar === 'l') {
-                        mychar = 'n';
-                    } else if (mychar === 'm') {
-                        mychar = 'o';
-                    } else if (mychar === 'n') {
-                        mychar = 'p';
-                    } else if (mychar === 'o') {
-                        mychar = 'q';
-                    } else if (mychar === 'p') {
-                        mychar = 'r';
-                    } else if (mychar === 'q') {
-                        mychar = 's';
-                    } else if (mychar === 'r') {
-                        mychar = 't';
-                    } else if (mychar === 's') {
-                        mychar = 'u';
-                    } else if (mychar === 't') {
-                        mychar = 'v';
-                    } else if (mychar === 'u') {
-                        mychar = 'w';
-                    } else if (mychar === 'v') {
-                        mychar = 'x';
-                    } else if (mychar === 'w') {
-                        mychar = 'y';
-                    } else if (mychar === 'x') {
-                        mychar = 'z';
-                    } else if (mychar === 'y') {
-                        mychar = 'a';
-                    } else if (mychar === 'z') {
-                        mychar = 'b';
-                    } else {
-                        mychar = mychar;
-                    }
-                    // console.log(mychar);
-                    // console.log(j + ', ' + i)
-                    tranContainer.append(mychar);
-                }
-            }
-            function hopToIt() {
-                tranContainer.text('');
-                var org = $('.org').val();
-                return translater(org);
-            }
-            tran = translater(org);
-            tranContainer.text(tran)
-        </script>
+        
 <!-- 
         g fmnc wms bgblr rpylqjyrc gr zw fylb. rfyrq ufyr amknsrcpq ypc dmp. bmgle gr gl zw fylb gq glcddgagclr ylb rfyr'q ufw rfgq rcvr gq qm jmle. sqgle qrpgle.kyicrpylq() gq pcamkkclbcb. lmu ynnjw ml rfc spj. -->
 
